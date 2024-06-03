@@ -32,6 +32,8 @@
             </intent-filter>
         </activity>
         <!--    추가한 부분    -->
+        <!-- 카메라에서 외부 저장소에 촬영 결과물을 저장하고 결과물의 Uri를 사용하기 위해서는 부가적으로
+        FileProvider를 통한 권한 처리가 필요-->
         <provider
             android:authorities="${applicationId}.provider"
             android:name="androidx.core.content.FileProvider"
